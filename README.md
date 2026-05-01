@@ -181,14 +181,18 @@ Available in: `Docs/data_dictionary.md`
 
 ## 📂 Estrutura do Projeto
 
+📂 Estrutura do Projeto
+
 Dataset/
+SQL_Analysis/
+Power_BI/
+├── Airline_Loyalty_Analysis.pbix
+└── Images/
+
 Docs/
 └── data_dictionary.md
-SQL_Analysis/  
-Power_BI/  
-├── Airline_Loyalty_Analysis.pbix  
-└── Images/  
-README.md  
+
+README.md
 
 
 
