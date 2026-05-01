@@ -186,6 +186,8 @@ Available in: `Docs/data_dictionary.md`
     Power_BI/
     ├── Airline_Loyalty_Analysis.pbix
     └── Images/
+    Docs/
+    └── data_dictionary.md
     README.md
 
 
