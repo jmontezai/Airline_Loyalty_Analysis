@@ -15,7 +15,7 @@ WITH customer_redeem AS (
         l.LoyaltyNumber, 
         l.IsActive
 )
-
+ 
 SELECT 
     CASE 
         WHEN TotalRedeemed = 0 THEN 'Never Redeemed'
