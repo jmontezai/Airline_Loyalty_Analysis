@@ -179,19 +179,18 @@ Available in: `Docs/data_dictionary.md`
 
 
 
-## 📂 Estrutura do Projeto
+Airline-Loyalty-Analysis/
 
+├── Dataset/
+├── SQL_Analysis/
+├── Power_BI/
+│   ├── Airline_Loyalty_Analysis.pbix
+│   └── Images/
 
-Dataset/
-SQL_Analysis/
-Power_BI/
-├── Airline_Loyalty_Analysis.pbix
-└── Images/
+├── Docs/
+│   └── data_dictionary.md
 
-Docs/
-└── data_dictionary.md
-
-README.md
+└── README.md
 
 
 
