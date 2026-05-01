@@ -128,6 +128,12 @@ O dashboard está dividido em quatro páginas principais:
 
 
 
+## 📖 Data Dictionary
+
+Available in: `Docs/data_dictionary.md`
+
+
+
 ## 💡 Principais Insights
 
 📈 A base de clientes cresceu ao longo do tempo, mas o churn também aumentou, mostrando que o crescimento não está a ser acompanhado por boa retenção.
@@ -175,7 +181,9 @@ O dashboard está dividido em quatro páginas principais:
 
 ## 📂 Estrutura do Projeto
 
-Dataset/  
+Dataset/
+Docs/
+└── data_dictionary.md
 SQL_Analysis/  
 Power_BI/  
 ├── Airline_Loyalty_Analysis.pbix  
