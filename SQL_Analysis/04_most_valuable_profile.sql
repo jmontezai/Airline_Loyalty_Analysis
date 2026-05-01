@@ -22,4 +22,5 @@ ORDER BY AvgCLV DESC;
 -- Insight: The most valuable profile is divorced males with 
 -- high school education (avg CLV $11,121). Bachelor-educated 
 -- females also rank high. Salary has little impact on CLV — 
--- engagement drives value, not income.
+-- engagement drives value, not income. 
+ 
