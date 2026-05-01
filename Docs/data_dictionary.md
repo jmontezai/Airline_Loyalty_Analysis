@@ -4,34 +4,34 @@
 
 | Column | Description |
 |---|---|
-| Loyalty Number | Número único do cliente no programa de fidelização |
-| Year | Ano do período |
-| Month | Mês do período |
-| Total Flights | Total de voos realizados no período |
-| Distance | Distância percorrida no período |
-| Points Accumulated | Pontos acumulados no período |
-| Points Redeemed | Pontos resgatados no período |
-| Dollar Cost Points Redeemed | Valor monetário dos pontos resgatados |
+| Loyalty Number | Unique customer identifier in the loyalty program |
+| Year | Year of the period |
+| Month | Month of the period |
+| Total Flights | Total number of flights in the period |
+| Distance | Distance traveled in the period |
+| Points Accumulated | Points earned in the period |
+| Points Redeemed | Points redeemed in the period |
+| Dollar Cost Points Redeemed | Monetary value of redeemed points |
 
 ### Customer Loyalty History
 
 | Column | Description |
 |---|---|
-| Loyalty Number | Número único do cliente no programa de fidelização |
-| Country | País de residência |
-| Province | Província de residência |
-| City | Cidade de residência |
-| Postal Code | Código postal |
-| Gender | Género |
-| Education | Nível de escolaridade |
-| Salary | Rendimento anual |
-| Salary Missing | Flag que identifica salários em falta |
-| Marital Status | Estado civil |
-| Loyalty Card | Nível do cartão de fidelização |
+| Loyalty Number | Unique customer identifier in the loyalty program |
+| Country | Country of residence |
+| Province | State/Province of residence |
+| City | City of residence |
+| Postal Code | Postal code |
+| Gender | Gender |
+| Education | Education level |
+| Salary | Annual income |
+| Salary Missing | Flag indicating missing salary values |
+| Marital Status | Marital status |
+| Loyalty Card | Loyalty card tier |
 | CLV | Customer Lifetime Value |
-| Enrollment Type | Tipo de adesão |
-| Enrollment Year | Ano de entrada no programa |
-| Enrollment Month | Mês de entrada no programa |
-| Cancellation Year | Ano de cancelamento |
-| Cancellation Month | Mês de cancelamento |
-| IsActive | Flag de estado do cliente: 1 = ativo, 0 = churned |
+| Enrollment Type | Enrollment type |
+| Enrollment Year | Year of enrollment |
+| Enrollment Month | Month of enrollment |
+| Cancellation Year | Year of cancellation |
+| Cancellation Month | Month of cancellation |
+| IsActive | Customer status flag: 1 = active, 0 = churned |
