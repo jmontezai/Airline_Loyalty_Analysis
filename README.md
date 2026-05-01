@@ -181,7 +181,6 @@ Available in: `Docs/data_dictionary.md`
 
 ## 📂 Estrutura do Projeto
 
-📂 Estrutura do Projeto
 
 Dataset/
 SQL_Analysis/
