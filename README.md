@@ -1,116 +1,96 @@
 # ✈️📊 Airline Loyalty Analysis — Churn & Customer Value
 
-## 🚀 Resumo Executivo
+## 🚀 Executive Summary
 
-Neste projeto, identifiquei um churn de 12,35% num programa de fidelização e descobri que a diminuição da atividade dos clientes (menos voos) é o principal sinal de abandono.
+In this project, I identified a **12.35% churn rate** in a loyalty program and found that **declining customer activity (fewer flights)** is the main indicator of churn.
 
-A análise mostra que quando os clientes deixam de usar o serviço com frequência, têm maior probabilidade de sair, o que representa um risco direto para a retenção e para a receita — especialmente nos clientes de maior valor.
+The analysis shows that when customers reduce their usage frequency, they become significantly more likely to leave. This represents a direct risk to both **customer retention and revenue**, especially among **high-value customers**.
 
-Além disso, foi possível identificar os grupos com maior risco de churn, criando uma oportunidade clara para agir mais cedo e melhorar a retenção de clientes.
+Additionally, I identified the segments with the highest churn risk, creating a clear opportunity for **early intervention and improved customer retention strategies**.
 
+## 📌 Project Overview
 
+This project analyzes customer behavior, loyalty program performance, and churn patterns within an airline.
 
-## 📌 Visão Geral do Projeto
+The goal was to build an **end-to-end analytical solution**, from data creation and preparation in SQL to the development of an interactive dashboard in Power BI, focused on generating actionable business insights.
 
-Este projeto analisa o comportamento dos clientes, o desempenho do programa de fidelização e os padrões de churn de uma companhia aérea.
+## 🎯 Business Objectives
 
-O objetivo foi construir uma solução analítica end-to-end, desde a criação e preparação dos dados em SQL até à criação de um dashboard interativo em Power BI, focado em insights de negócio.
-
-
-
-## 🎯 Objetivos de Negócio
-
-- Analisar a evolução do churn ao longo do tempo  
-- Identificar segmentos com maior risco de churn  
-- Compreender a relação entre atividade dos clientes e retenção  
-- Avaliar o valor dos clientes através do CLV  
-- Monitorizar métricas-chave:
-  - Total de Clientes  
-  - Clientes Ativos  
-  - Clientes Churned  
+- Analyze churn trends over time  
+- Identify high-risk customer segments  
+- Understand the relationship between customer activity and retention  
+- Evaluate customer value through CLV  
+- Monitor key metrics:
+  - Total Customers  
+  - Active Customers  
+  - Churned Customers  
   - Churn Rate  
   - Retention Rate  
   - Total Flights  
   - Customer Lifetime Value (CLV)  
 
+## 🛠️ Tools and Technologies
 
+- SQL Server → database creation, data cleaning, transformation, and modeling  
+- Power BI → data visualization and dashboard development  
+- DAX → analytical measures and calculations  
 
-## 🛠️ Ferramentas e Tecnologias
+## 🧠 Data Preparation (SQL)
 
-- SQL Server → criação da base de dados, limpeza, transformação e modelação  
-- Power BI → visualização de dados e desenvolvimento do dashboard  
-- DAX → criação de medidas e cálculos analíticos  
+A dedicated **Analytics schema** was created on top of the raw data in the **Loyalty schema**, separating operational data from analysis-ready data.
 
+### Key steps:
 
-
-## 🧠 Preparação dos Dados (SQL)
-
-Foi criado um schema dedicado Analytics por cima dos dados brutos no schema Loyalty, separando os dados operacionais dos dados prontos para análise.
-
-### Principais passos:
-
-- Criação da base de dados `Airline_Loyalty_Analysis`  
-- Criação dos schemas:
-  - Loyalty
-  - Analytics
-- Criação das tabelas:
-  - Calendar
-  - Customer_Flight_Activity
-  - Customer_Loyalty_History
-- Importação dos dados através de BULK INSERT  
-- Conversão de tipos de dados para formatos corretos  
-- Agregação da atividade de voos por cliente, ano e mês  
-- Correção de salários negativos usando ABS()  
-- Criação da coluna SalaryMissing para identificar salários em falta  
-- Criação da coluna IsActive para análise de churn:
-  - 1 = cliente ativo  
-  - 0 = cliente churned  
-- Criação de views analíticas:
-  - VW_Calendar
-  - VW_Customer_Flight_Activity
+- Created the database `Airline_Loyalty_Analysis`  
+- Created schemas:
+  - Loyalty  
+  - Analytics  
+- Created tables:
+  - Calendar  
+  - Customer_Flight_Activity  
+  - Customer_Loyalty_History  
+- Imported data using BULK INSERT  
+- Converted data types to appropriate formats  
+- Aggregated flight activity by customer, year, and month  
+- Fixed negative salary values using `ABS()`  
+- Created the `SalaryMissing` column to flag missing salary data  
+- Created the `IsActive` column for churn analysis:
+  - 1 = active customer  
+  - 0 = churned customer  
+- Created analytical views:
+  - VW_Calendar  
+  - VW_Customer_Flight_Activity  
   - VW_Customer_Loyalty_History  
-
-👉 Resultado: dataset limpo e preparado para análise em Power BI.
-
-
 
 ## 📊 Dashboard
 
-O dashboard está dividido em quatro páginas principais:
+The dashboard is divided into four main pages:
 
 ### Overview
 
 - KPIs: Total Customers, Active Customers, Churned Customers, Churn Rate, Retention Rate  
-- Evolução da base de clientes vs churn  
-- Distribuição por loyalty card e enrollment type  
-- Análise por cidade (clientes, churn, voos e CLV)  
-
----
+- Customer base growth vs churn trend  
+- Distribution by loyalty card and enrollment type  
+- City-level analysis (customers, churn, flights, and CLV)  
 
 ### Churn Analysis
 
-- Churn rate ao longo do tempo  
-- Churn por loyalty card e enrollment type  
-- Churn por cidade  
-- Months to churn  
-
----
+- Churn rate over time  
+- Churn by loyalty card and enrollment type  
+- Churn by city  
+- Time to churn (months)  
 
 ### Loyalty Analysis
 
-- Total CLV e Average CLV  
+- Total CLV and Average CLV  
 - Average Points per Customer  
 - Redemption Rate  
-- CLV por segmento  
-
----
+- CLV by segment  
 
 ### Geography
 
-- Distribuição geográfica dos clientes  
-- Mapa com métricas por cidade  
-
-
+- Geographic distribution of customers  
+- Map with metrics by city  
 
 ## 📸 Dashboard Preview
 
@@ -126,72 +106,55 @@ O dashboard está dividido em quatro páginas principais:
 ### Geography
 ![Geography](Power_BI/Images/04_Geography.png)
 
-
-
 ## 📖 Data Dictionary
 
-Available in: `Docs/data_dictionary.md`
+Available at: `Docs/data_dictionary.md`
 
+## 💡 Key Insights
 
+📈 The customer base has grown over time, but churn has also increased, indicating that growth is not being matched by strong retention.
 
-## 💡 Principais Insights
+✈️ A decrease in the number of flights is one of the strongest indicators of churn, suggesting that reduced engagement leads to customer loss.
 
-📈 A base de clientes cresceu ao longo do tempo, mas o churn também aumentou, mostrando que o crescimento não está a ser acompanhado por boa retenção.
+👥 Aurora customers have higher value (CLV) but also higher churn, representing a direct revenue risk among the most valuable customers.
 
-✈️ A diminuição no número de voos é um dos principais sinais de churn, indicando que quando os clientes deixam de usar o serviço com frequência, acabam por sair pouco tempo depois.
+🌍 Certain cities show higher churn levels, which may indicate differences in customer behavior or potential local issues.
 
-👥 Clientes Aurora têm maior valor (CLV), mas também maior churn, o que representa um risco direto de perda de receita nos clientes mais importantes.
+📊 Low points redemption rates suggest that many customers are not fully engaging with the program benefits.
 
-🌍 Algumas cidades apresentam níveis mais elevados de churn, o que pode indicar diferenças no comportamento dos clientes ou possíveis problemas locais.
-
-📊 A baixa utilização de pontos (redemption rate) mostra que muitos clientes não estão a aproveitar os benefícios, o que pode reduzir o engagement com o programa.
-
-🔗 No geral, os dados indicam que o churn está fortemente ligado à perda de engagement ao longo do tempo — clientes que usam menos o serviço tendem a abandonar o programa.
-
-
+🔗 Overall, the data indicates that churn is strongly linked to declining engagement over time — customers who use the service less tend to leave.
 
 ## 💼 Business Recommendations
 
-📌 Criar campanhas para clientes que começaram a voar menos, para tentar recuperar o interesse antes de abandonarem o programa.
+- Create campaigns targeting customers whose flight activity is decreasing to re-engage them before they churn  
+- Prioritize high-value customers (Aurora), as they represent higher revenue but also higher risk  
+- Encourage points redemption through more attractive offers to increase engagement  
+- Investigate cities with higher churn to identify potential underlying issues  
 
-🎯 Dar mais atenção aos clientes Aurora, porque têm maior valor, mas também maior probabilidade de sair.
+## ⚠️ Limitations
 
-🎁 Incentivar o uso de pontos com ofertas mais atrativas, já que muitos clientes acumulam mas não utilizam.
+- Simulated dataset  
+- Does not include external factors such as marketing campaigns, pricing, or competition  
+- No explicit churn reasons available  
 
-🌍 Analisar melhor as cidades com mais churn para perceber o que pode estar a causar essa diferença.
+## 🚀 Next Steps
 
+- Enhance customer segmentation  
+- Build predictive churn models  
+- Improve engagement strategies  
+- Increase points redemption rate  
 
+## 📂 Project Structure
 
-## ⚠️ Limitações
+Dataset/  
+SQL_Analysis/  
+Power_BI/  
+├── Airline_Loyalty_Analysis.pbix  
+└── Images/  
+Docs/  
+└── data_dictionary.md  
+README.md  
 
-- Dataset simulado  
-- Não inclui fatores externos como campanhas, preços ou concorrência  
-- Não existem razões explícitas para cancelamento  
+## 👤 Author
 
-
-
-## 🚀 Próximos Passos
-
-- Aprofundar a segmentação de clientes  
-- Analisar padrões para antecipar churn  
-- Melhorar estratégias de engagement  
-- Aumentar a utilização de pontos  
-
-
-
-## 📂 Estrutura do Projeto
-
-    Dataset/
-    SQL_Analysis/
-    Power_BI/
-    ├── Airline_Loyalty_Analysis.pbix
-    └── Images/
-    Docs/
-    └── data_dictionary.md
-    README.md
-
-
-
-## 👤 Autor
-
-Projeto desenvolvido por João, focado em análise de dados end-to-end e tomada de decisão baseada em dados.
+Developed by João, focused on end-to-end data analysis and data-driven decision-making.
