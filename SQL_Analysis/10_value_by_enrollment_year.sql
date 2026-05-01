@@ -9,7 +9,7 @@ SELECT
     CAST(AVG(CLV) AS DECIMAL(10,2)) AS AvgCLV,
     CAST(SUM(CASE WHEN IsActive = 0 THEN 1 ELSE 0 END) * 100.0 
         / COUNT(LoyaltyNumber) AS DECIMAL(5,2)) AS ChurnRate
-FROM Analytics.VW_Customer_Loyalty_History
+FROM Analytics.VW_Customer_Loyalty_History 
 GROUP BY 
     EnrollmentYear
 ORDER BY 
