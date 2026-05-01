@@ -1,6 +1,6 @@
 -- ===================================================
 -- Question 9: 
--- Are low-frequency flyers at risk of leaving?
+-- Are low-frequency flyers at risk of leaving? 
 -- ===================================================
 
 SELECT 
