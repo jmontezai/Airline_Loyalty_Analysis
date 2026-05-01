@@ -19,4 +19,4 @@ GROUP BY
 -- Insight: The 2018 promotion brought customers with 
 -- similar CLV to standard enrollees. However, promo 
 -- customers have a much higher churn rate vs standard 2018. 
--- They fly more but leave faster.
+-- They fly more but leave faster. 
