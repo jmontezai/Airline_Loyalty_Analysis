@@ -77,7 +77,7 @@ The dashboard is divided into four main pages:
 
 - Churn rate over time  
 - Churn by loyalty card and enrollment type  
-- Churn by city  
+- Churn by ptovince and city  
 - Time to churn (months)  
 
 ### Loyalty Analysis
