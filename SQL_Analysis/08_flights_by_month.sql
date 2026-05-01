@@ -23,4 +23,4 @@ ORDER BY
 -- followed by June and August — the summer season. 
 -- February is the lowest (0.83). Campaigns should launch 
 -- in April-May to capture the summer surge, and November 
--- to boost the December holiday travel spike.
+-- to boost the December holiday travel spike. 
