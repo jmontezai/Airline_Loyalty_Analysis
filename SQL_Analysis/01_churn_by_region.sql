@@ -19,4 +19,4 @@ ORDER BY
 -- rate (16.67%), followed by Manitoba (15.2%).
 -- However, PEI only has 66 customers — small sample.
 -- Manitoba with 658 customers is more concerning.
--- New Brunswick has the lowest churn (10.5%).
+-- New Brunswick has the lowest churn (10.5%). 
