@@ -1,5 +1,5 @@
 -- ========================================
--- Database Creation
+-- Database Creation 
 -- ========================================
 CREATE DATABASE Airline_Loyalty_Analysis;
 GO
