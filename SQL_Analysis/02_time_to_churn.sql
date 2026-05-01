@@ -11,7 +11,7 @@ WITH churn_calc AS (
     FROM Analytics.VW_Customer_Loyalty_History
     WHERE IsActive = 0
 )
-
+ 
 SELECT 
     CASE 
         WHEN MonthsToChurn <= 6 THEN '0-6 months'
