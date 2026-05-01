@@ -1,7 +1,7 @@
 -- ============================================
 -- Schema created to organize the analysis views
 -- ============================================
-CREATE SCHEMA Analytics;
+CREATE SCHEMA Analytics; 
 GO
 
 -- ============================================
