@@ -20,4 +20,4 @@ ORDER BY
 -- Insight: Aurora has the highest avg CLV but only 20% of 
 -- customers. Star has the lowest avg CLV but contributes 
 -- the most total value because it has the most customers.
--- Aurora has the highest churn despite being the premium tier.
+-- Aurora has the highest churn despite being the premium tier. 
