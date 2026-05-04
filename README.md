@@ -33,7 +33,6 @@ The goal was to build an **end-to-end analytical solution**, from data creation 
 
 - SQL Server → database creation, data cleaning, transformation, and modeling  
 - Power BI → data visualization and dashboard development  
-- DAX → analytical measures and calculations  
 
 ## 🧠 Data Preparation (SQL)
 
@@ -51,8 +50,7 @@ A dedicated **Analytics schema** was created on top of the raw data in the **Loy
   - Customer_Loyalty_History  
 - Imported data using BULK INSERT  
 - Converted data types to appropriate formats  
-- Aggregated flight activity by customer, year, and month  
-- Fixed negative salary values using `ABS()`  
+- Aggregated flight activity by customer, year, and month   
 - Created the `SalaryMissing` column to flag missing salary data  
 - Created the `IsActive` column for churn analysis:
   - 1 = active customer  
