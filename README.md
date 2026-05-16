@@ -150,15 +150,15 @@ Dataset/
 ├── DataBase_Creation.sql
 └── Views_Creation.sql
 
+Docs/  
+└── data_dictionary.md
+
 SQL_Analysis/
 
 Power_BI/
 ├── Airline_Loyalty_Analysis.pbix  
 └── Images/
-
-Docs/  
-└── data_dictionary.md  
-
+ 
 README.md
 ```
 
