@@ -144,14 +144,23 @@ Available at: `Docs/data_dictionary.md`
 
 ## 📂 Project Structure
 
-Dataset/  
-SQL_Analysis/  
-Power_BI/  
+```text
+Dataset/
+├── Data/
+├── DataBase_Creation.sql
+└── Views_Creation.sql
+
+SQL_Analysis/
+
+Power_BI/
 ├── Airline_Loyalty_Analysis.pbix  
-└── Images/  
+└── Images/
+
 Docs/  
 └── data_dictionary.md  
-README.md  
+
+README.md
+```
 
 ## 👤 Author
 
